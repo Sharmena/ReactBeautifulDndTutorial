@@ -21,3 +21,5 @@ We suggest that you begin by typing:
 
   cd my-app
   npm start
+
+  Note that I did not complete lesson 7 and 8 for styling things, but they could be added later if we want to use them
