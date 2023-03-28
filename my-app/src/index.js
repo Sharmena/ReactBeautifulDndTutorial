@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import initialData from './initial-data';
 import Column from './column';
 import { DragDropContext } from 'react-beautiful-dnd';
+import importExcel from './importExcel';
+
+importExcel('Computer Science BA');
 
 const Container = styled.div`
   display: flex;
