@@ -17,8 +17,10 @@ xlsxFile('./src/Requirements.xlsx', {sheet: major})
         if (cell!= null && cell.includes("Year")){
             //while listing column headers create semester set up
             semesterCount ++;
-            columns(current => [...current, {id: cell, count:semesterCount, taskIds: []}])
-            columnOrder(current => [...current, cell])
+
+            initialData.columns = initialData.columns.concat({id: 'column-' + semesterCount, title:cell, taskIds: []})
+            
+            initialData.columnOrder = initialData.columnOrder.concat('column-' + semesterCount)
 
 
         } else {
@@ -29,7 +31,10 @@ xlsxFile('./src/Requirements.xlsx', {sheet: major})
                 
               } 
                 //create drag and drop object in semester i
-                tasks(current => [...current,{id: cell, count: semesterCount}])
+
+                initialData.tasks = initialData.tasks.concat({id: cell, count: semesterCount});
+                
+
 
 
 
@@ -56,6 +61,8 @@ xlsxFile('./src/Requirements.xlsx', {sheet: major})
   }); 
 }
 
+importExcel('Engineering');
+console.log(initialData.columns);
 /*cases for later use
 
 var major;
@@ -79,7 +86,7 @@ importExcel(major);
 
 */
 
-//importExcel('Engineering');
+
 
 export default importExcel;
 

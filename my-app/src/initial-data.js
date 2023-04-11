@@ -5,9 +5,9 @@ const initialData = {
 
     columns: {
 
-
     },
-    columnOrder: []
+    
+    columnOrder: [ ]
 };
 
 export default initialData;
