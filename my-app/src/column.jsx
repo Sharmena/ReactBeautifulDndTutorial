@@ -27,7 +27,7 @@ export default class Column extends React.Component {
     render() {
         return (
         <Container>
-            <Title>{this.props.column.id}</Title>
+            <Title>{this.props.column.title}</Title>
                 <Droppable droppableId={this.props.column.id}>
                     {(provided, snapshot )=> (
                     <TaskList
