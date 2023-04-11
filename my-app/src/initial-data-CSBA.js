@@ -1,23 +1,27 @@
-const initialData = {
+const initialDataCSBA = {
     tasks: {
         'task-1': {id: 'task-1', content: 'COMSC 110 - Introduction to Computer Science & Lab'},
         'task-2': {id: 'task-2', content: 'Core Class Choice'},
         'task-3': {id: 'task-3', content: 'MATH 221 - Discrete Mathematics'},
         'task-4': {id: 'task-4', content: 'WTNG 102 - How Writing Works'},
+        
         'task-5': {id: 'task-5', content: 'COMSC 111 - Data Structures & Lab'},
         'task-6': {id: 'task-6', content: 'MATH 124 - Basic Statistics'},
         'task-7': {id: 'task-7', content: 'Core Class Choice'},
-        'task-8': {id: 'task-8', content: 'WTNG 200 - Critical Writing for the Humanities and the Social Sciences'},
+        'task-8': {id: 'task-8', content: 'Writing Choice'},
         'task-9': {id: 'task-9', content: 'COMM 210 - Introduction to Public Speaking'},
+        
         'task-10': {id: 'task-10', content: '3 credit elective'},
         'task-11': {id: 'task-11', content: '3 credit elective'},
         'task-12': {id: 'task-12', content: 'COMSC 230 - Principles of Programming Languages'},
         'task-13': {id: 'task-13', content: 'Core Class Choice'},
         'task-14': {id: 'task-14', content: 'Core Class Choice'},
+        
         'task-15': {id: 'task-15', content: 'COMSC Elective'},
         'task-16': {id: 'task-16', content: '3 credit elective'},
         'task-17': {id: 'task-17', content: 'COMSC 340 - Analysis of Algorithms'},
         'task-18': {id: 'task-18', content: 'Core Class Choice'},
+       
         'task-19': {id: 'task-19', content: '3 credit elective'},
         'task-20': {id: 'task-20', content: '3 credit elective'},
         'task-21': {id: 'task-21', content: '3 credit elective'},
@@ -58,4 +62,5 @@ const initialData = {
     columnOrder: ['column-1','column-2','column-3','column-4','column-5','column-6','column-7','column-8']
 };
 
-export default initialData;
+
+export default initialDataCSBA;

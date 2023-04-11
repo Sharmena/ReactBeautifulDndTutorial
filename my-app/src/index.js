@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
-import initialData from './initial-data';
+import initialDataCSBA from './initial-data-CSBA';
 import Column from './column';
 import { DragDropContext } from 'react-beautiful-dnd';
 
@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 class App extends React.Component {
-  state = initialData;
+  state = initialDataCSBA;
 
   onDragEnd = result => {
     const {destination, source, draggableId} = result;
